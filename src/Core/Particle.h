@@ -2,6 +2,9 @@
 // Created by reiche on 12.10.21.
 //
 
+// basic core object to  hold the information of a single particle
+
+
 #ifndef GENESIS_1_3_VERSION5_PARTICLE_H
 #define GENESIS_1_3_VERSION5_PARTICLE_H
 

@@ -1,11 +1,11 @@
 #include <iostream>
 
-#include "src/Core/Particle.h"
+#include "src/Core/Beam.h"
 
 int main() {
-    Particle<double> p;
-    p.gamma=2;
-    Particle<double> pp = p;
-    std::cout << pp.gamma << " " << pp.theta << std::endl;
-    return 0;
+    Beam b;
+    b.init(10);
+    std::cout << "Allocation done. Size: " << b.beam.size() << "\n";
+    b.clear();
+    std::cout << "Allocation done. Size: " << b.beam.size() << "\n";
 }
