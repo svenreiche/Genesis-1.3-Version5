@@ -11,13 +11,13 @@
 #include <vector>
 #include "Particle.h"
 
+template<class T>
 class Beam {
     public:
-        std::vector< std::vector< Particle<double> > > beam;
-        Beam(){};
-        ~Beam(){};
+        std::vector< std::vector< Particle<T> > > beam;
         bool init(unsigned int);
-        void clear() {beam.resize(0);};
+        void initSlice(unsigned int, const std::vector<Particle<T>>&);
+        void clear();
 };
 
 
